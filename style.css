@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.font-mukta{
+    font-family: 'Mukta', sans-serif;
+}
+body{
+    background-color: #ecf0f3;
+}
+.container{
+    gap: 5%;
+    margin: 5%;
+    padding: 3%;
+    flex-direction: column;
+    width:28%;
+    height: 100%;
+    border-radius: 50px;
+    background-image: #ecf0f3;
+    box-shadow:
+    0px 0px 2px #858585,
+    0px 0px 10px 15px #ecf0f3,
+    8px 8px 15px #a7aaaf,
+    -8px -8px 15px #ffffff
+    ;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+
+}
+.icon img{
+    width: 30%;
+    padding: 3%;
+    margin-bottom: 10%;
+    box-shadow: -8px -8px 15px #9f9f9f, 8px 8px 10px #ffffff;
+    border-radius: 10%;
+}
+
+h2{
+    font-family: 'Sigmar', cursive;
+    font-weight: lighter;
+}
+.section{
+    padding: 2% 0;
+}
+.section input{
+    padding: 5% 20%;
+    border-radius: 5rem;
+    border: none;
+    background-image: linear-gradient(5deg, #e2e2e2, #ffffff);
+    box-shadow: inset 2px 2px 5px #babecc,
+    inset -1px -1px 2px #ffffff73;
+}
+.section input:active{
+    border: 2px solid rgb(21, 200, 255);
+}
+.or{
+    padding-top: 4%;
+    font-weight: bold;
+}
+.button .login{
+    margin-top: 5%;
+    padding: 2% 37%;
+}
+.primary-button{
+    padding: 2% 10%;
+    border-radius: 5rem;
+    background: #eceef2;
+    box-shadow: 2px 2px 5px #babecc, 5px -5px 10px #ffffff73;
+    border: none;
+}
+.primary-button:hover{
+    box-shadow: inset 2px 2px 5px #babecc,
+    inset -1px -1px 2px #ffffff73;
+    background-color:rgb(21, 200, 255);
+    transition: 0.4s ease-in;
+    color:#ffffff;
+}
+.api-buttons{
+    justify-content: space-evenly;
+    /* margin-top: 5%; */
+}
+.google{
+    padding: 2% 12%;
+}
