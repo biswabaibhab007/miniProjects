@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal C | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container flex">
+        <div class="calculator">
+            <form>
+                <div class="display flex">
+                    <input id="screen" type="text" placeholder="0" name="display">
+                </div>
+                <div>
+                    <input class="btn" onclick="clearDisplay()" type="button" value="AC">
+                    <input class="btn"  onclick="deleteDisplay()" type="button" value="DE">
+                    <input class="btn" onclick="appendToDisplay('.')" type="button" value=".">
+                    <input class="btn" onclick="appendToDisplay('/')" type="button" value="/">
+                </div>
+                <div>
+                    <input class="btn" onclick="appendToDisplay('7')" type="button" value="7">
+                    <input class="btn" onclick="appendToDisplay('8')" type="button" value="8">
+                    <input class="btn" onclick="appendToDisplay('9')" type="button" value="9">
+                    <input class="btn" onclick="appendToDisplay('*')" type="button" value="*">
+                </div>
+                <div>
+                    <input class="btn" onclick="appendToDisplay('4')" type="button" value="4">
+                    <input class="btn" onclick="appendToDisplay('5')" type="button" value="5">
+                    <input class="btn" onclick="appendToDisplay('6')" type="button" value="6">
+                    <input class="btn" onclick="appendToDisplay('-')" type="button" value="-">
+                </div>
+                <div>
+                    <input class="btn" onclick="appendToDisplay('1')" type="button" value="1">
+                    <input class="btn" onclick="appendToDisplay('2')" type="button" value="2">
+                    <input class="btn" onclick="appendToDisplay('3')" type="button" value="3">
+                    <input class="btn" onclick="appendToDisplay('+')" type="button" value="+">
+                </div>
+                <div>
+                    <input class="btn" onclick="appendToDisplay('00')" type="button" value="00">
+                    <input class="btn" onclick="appendToDisplay('0')" type="button" value="0">
+                    <input class="btn equal" onclick="calculateResult()" type="button" value="=">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
